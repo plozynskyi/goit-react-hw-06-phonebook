@@ -1,12 +1,13 @@
 import { useSelector, useDispatch } from 'react-redux';
+
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 import PhoneBookList from 'components/PhoneBookList/PhoneBookList';
 import PhoneBookFilter from 'components/PhoneBookFilter/PhoneBookFilter';
 import PhoneBooksForm from 'components/PhoneBookForm/PhoneBookForm';
 
-import { addContact, deleteContact } from 'redux/contacts/contacts-actions';
-import { setFilter } from 'redux/filter/filter-actions';
+import { addContact, deleteContact } from 'redux/contacts/contacts-slice';
+import { setFilter } from 'redux/filter/filter-slice';
 
 import {
   getAllContacts,
